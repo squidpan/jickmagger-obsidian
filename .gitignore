@@ -9,3 +9,6 @@
 
 # Exclude macOS Finder (System Explorer) View States
 .DS_Store
+Templates/Bases/Games.base
+Templates/Letter Template.md
+Templates/Bases/Games.base
