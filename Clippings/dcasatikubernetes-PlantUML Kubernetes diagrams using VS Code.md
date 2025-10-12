@@ -1,13 +1,15 @@
 ---
 title: "dcasati/kubernetes-PlantUML: Kubernetes diagrams using VS Code"
-source: "https://github.com/dcasati/kubernetes-PlantUML"
+source: https://github.com/dcasati/kubernetes-PlantUML
 author:
   - "[[dcasati]]"
 published:
 created: 2025-10-12
-description: "Kubernetes diagrams using VS Code. Contribute to dcasati/kubernetes-PlantUML development by creating an account on GitHub."
+description: Kubernetes diagrams using VS Code. Contribute to dcasati/kubernetes-PlantUML development by creating an account on GitHub.
 tags:
-  - "clippings"
+  - clippings
+categories:
+  - "[[Clippings]]"
 ---
 **[kubernetes-PlantUML](https://github.com/dcasati/kubernetes-PlantUML)** Public
 
