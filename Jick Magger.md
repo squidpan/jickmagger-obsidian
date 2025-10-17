@@ -24,9 +24,22 @@ In the last 5+ years, I worked on documenting, testing, deploying on NPQS to all
 - Interests
 	- Rest API, swagger
 	- Spring Boot Web MVC
+	- React
 	- K8s
 	- Cloud
 	- gitlab, postman
+	- grafana
+	- Prometheus
+	- helm
+	- oauth2
+	- Okta
+	- java/maven
+	- OCP4
+	- Proxmox
+	- Reading books
+	- Writing
+	- music
+	- smoking
 
 
 
