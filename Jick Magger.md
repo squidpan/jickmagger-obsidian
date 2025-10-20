@@ -49,7 +49,13 @@ I helped setup Jira tickets for the squad when requested by the Product owner an
 
 ### Workflow and regression test PRIME
 
-#### Suspect Price cleansing
+#### Suspect Price cleansing aka workflow
+is a process that takes 4 times a day right after each benchmark job run at (0840 1130 1415 1530)by the pricing team. Pricing team uses AC Admin desktop, a thick Java client locally installed (or VDI), whIch connects to the PRIME backend (ie INT_acint1) and provides an interface to cleanse suspect prices and enforces 4 eyes on cleanse/validate/accept-reject approval actions by preventing anyone member to approve his own changes. For each PRIME release, 4 eyes enforcement is tested via 2 users each logging in with the role of Guardian and Inspector roels respectively as DAS_S, DAS_S_2.
+
+#### Data quality consistency and regression tests
+in INT environment, data quality is assessed by
+
+
 
 ### OPS360 - Cloud distribution
 
