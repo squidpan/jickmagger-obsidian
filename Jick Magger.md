@@ -9,6 +9,8 @@ created: 2025-10-17
 ---
 ## Preamble
 
+NPQS provides consolidated streaming prices to markets data consumers both on prem and in the cloud. It is the defacto 
+
 My primary responsibility within the squad is to ensure every Prime release is successfully deployed to the integration environment and higher environments (QA, PROD).
 
 
@@ -52,8 +54,20 @@ I helped setup Jira tickets for the squad when requested by the Product owner an
 #### Suspect Price cleansing aka workflow
 is a process that takes 4 times a day right after each benchmark job run at (0840 1130 1415 1530)by the pricing team. Pricing team uses AC Admin desktop, a thick Java client locally installed (or VDI), whIch connects to the PRIME backend (ie INT_acint1) and provides an interface to cleanse suspect prices and enforces 4 eyes on cleanse/validate/accept-reject approval actions by preventing anyone member to approve his own changes. For each PRIME release, 4 eyes enforcement is tested via 2 users each logging in with the role of Guardian and Inspector roels respectively as DAS_S, DAS_S_2.
 
+```code
+Workflow suspect cleansing Testing steps
+1. DAS_S(user with Guardian role) logs into AC Admin desktop as DAS_S
+2. Module > Workflow
+   Select Workflow suspect folder to cleans (e.g. BENCHMARK_0840, BEMCHMARK_1130, etc)
+3. Click on suspect, right click to [Manually modify/ Just Validate, etc] and SAVE
+4. Suspect item flows from Suspect Folder to Approval Folder
+5. Login as DAS_S_2 and perform (Accept/reject) actions on the item in Apporval folder < right click find acceptable, Accept and Save > DAS_S will fail if attempting to Accept his own updates
+```
+
 #### Data quality consistency and regression tests
-in INT environment, data quality is assessed by
+in INT environment, data quality is assessed by comparing 2 versions, the released (Tag69) to current PRIME Prod version (INT_acdba - Tag68) by looking at the QC reports. QC reports provides the extent of discrepancy between two consecutive releases. Realtime comparisons of a given security and at eh 'same' point in time requires visually inspecting the differencces.
+
+
 
 
 
